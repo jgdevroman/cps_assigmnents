@@ -103,7 +103,7 @@
     </transition>
     <transition id="tr56">
       <name>
-        <text>balance insufficient</text>
+        <text>rec_nack_amount</text>
       </name>
       <graphics>
         <position x="584" y="1844" />
@@ -112,7 +112,7 @@
     </transition>
     <transition id="tr62">
       <name>
-        <text>balance sufficient</text>
+        <text>rec_ack_amount</text>
       </name>
       <graphics>
         <position x="708" y="1928" />
@@ -274,7 +274,7 @@
     </transition>
     <transition id="tr53">
       <name>
-        <text>balance insufficient</text>
+        <text>send_nack_amount</text>
       </name>
       <graphics>
         <position x="1685" y="1849" />
@@ -283,7 +283,7 @@
     </transition>
     <transition id="tr54">
       <name>
-        <text>balance sufficient</text>
+        <text>send_ack_amount</text>
       </name>
       <graphics>
         <position x="1561" y="1928" />
