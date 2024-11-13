@@ -7,7 +7,7 @@
         <text>insert card</text>
       </name>
       <graphics>
-        <position x="742" y="120" />
+        <position x="724" y="120" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -16,7 +16,7 @@
         <text>ack</text>
       </name>
       <graphics>
-        <position x="740" y="434" />
+        <position x="722" y="434" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -25,7 +25,7 @@
         <text>nack</text>
       </name>
       <graphics>
-        <position x="478" y="344" />
+        <position x="460" y="344" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -34,7 +34,7 @@
         <text>enter pin</text>
       </name>
       <graphics>
-        <position x="741" y="728" />
+        <position x="723" y="728" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -43,7 +43,7 @@
         <text>pin incorrect</text>
       </name>
       <graphics>
-        <position x="505" y="955" />
+        <position x="487" y="955" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -52,7 +52,7 @@
         <text>pin correct</text>
       </name>
       <graphics>
-        <position x="742" y="1045" />
+        <position x="724" y="1045" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -61,7 +61,7 @@
         <text>inquiry deposit</text>
       </name>
       <graphics>
-        <position x="741" y="1325" />
+        <position x="721" y="1331" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -70,7 +70,7 @@
         <text>inquiry balance</text>
       </name>
       <graphics>
-        <position x="627" y="1329" />
+        <position x="609" y="1329" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -79,7 +79,7 @@
         <text>inquiry withdrawal</text>
       </name>
       <graphics>
-        <position x="498" y="1334" />
+        <position x="480" y="1334" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -88,7 +88,7 @@
         <text>end session</text>
       </name>
       <graphics>
-        <position x="569" y="1176" />
+        <position x="551" y="1176" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -97,7 +97,7 @@
         <text>enter amount</text>
       </name>
       <graphics>
-        <position x="497" y="1585" />
+        <position x="479" y="1585" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -106,7 +106,7 @@
         <text>balance insufficient</text>
       </name>
       <graphics>
-        <position x="373" y="1846" />
+        <position x="355" y="1846" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -115,7 +115,7 @@
         <text>balance sufficient</text>
       </name>
       <graphics>
-        <position x="497" y="1925" />
+        <position x="479" y="1925" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -124,7 +124,7 @@
         <text>take out cash</text>
       </name>
       <graphics>
-        <position x="193" y="2091" />
+        <position x="175" y="2091" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -133,7 +133,7 @@
         <text>confirm balance</text>
       </name>
       <graphics>
-        <position x="624" y="1516" />
+        <position x="606" y="1516" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -142,13 +142,16 @@
         <text>insert cash</text>
       </name>
       <graphics>
-        <position x="747" y="2259" />
+        <position x="729" y="2259" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
     <transition id="tr85">
+      <name>
+        <text>deposit complete</text>
+      </name>
       <graphics>
-        <position x="566" y="2641" />
+        <position x="548" y="2641" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -157,7 +160,7 @@
         <text>deposit error</text>
       </name>
       <graphics>
-        <position x="496" y="2491" />
+        <position x="478" y="2491" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -166,7 +169,16 @@
         <text>terminate</text>
       </name>
       <graphics>
-        <position x="16" y="2489" />
+        <position x="16" y="2366" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr2">
+      <name>
+        <text>retry</text>
+      </name>
+      <graphics>
+        <position x="294" y="2488" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -175,7 +187,7 @@
         <text>idle</text>
       </name>
       <graphics>
-        <position x="740" y="10" />
+        <position x="722" y="10" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -187,7 +199,7 @@
         <text>wait ack</text>
       </name>
       <graphics>
-        <position x="742" y="226" />
+        <position x="724" y="226" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -199,7 +211,7 @@
         <text>card verification</text>
       </name>
       <graphics>
-        <position x="906" y="120" />
+        <position x="888" y="120" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -211,7 +223,7 @@
         <text>card ack</text>
       </name>
       <graphics>
-        <position x="914" y="433" />
+        <position x="896" y="433" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -223,7 +235,7 @@
         <text>card nack</text>
       </name>
       <graphics>
-        <position x="910" y="343" />
+        <position x="892" y="343" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -235,7 +247,7 @@
         <text>Waiting for PIN</text>
       </name>
       <graphics>
-        <position x="741" y="574" />
+        <position x="723" y="574" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -247,7 +259,7 @@
         <text>pin verification</text>
       </name>
       <graphics>
-        <position x="905" y="728" />
+        <position x="887" y="728" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -259,7 +271,7 @@
         <text>PIN checking</text>
       </name>
       <graphics>
-        <position x="742" y="863" />
+        <position x="724" y="863" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -271,7 +283,7 @@
         <text>pin nack</text>
       </name>
       <graphics>
-        <position x="901" y="955" />
+        <position x="883" y="955" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -283,7 +295,7 @@
         <text>pin ack</text>
       </name>
       <graphics>
-        <position x="904" y="1043" />
+        <position x="886" y="1043" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -295,7 +307,7 @@
         <text>Operational State</text>
       </name>
       <graphics>
-        <position x="741" y="1176" />
+        <position x="723" y="1176" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -307,7 +319,7 @@
         <text>wait for amount</text>
       </name>
       <graphics>
-        <position x="497" y="1432" />
+        <position x="479" y="1432" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -319,7 +331,7 @@
         <text>amount verification</text>
       </name>
       <graphics>
-        <position x="892" y="1586" />
+        <position x="874" y="1586" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -331,7 +343,7 @@
         <text>check amount</text>
       </name>
       <graphics>
-        <position x="497" y="1747" />
+        <position x="479" y="1747" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -343,7 +355,7 @@
         <text>amount ack</text>
       </name>
       <graphics>
-        <position x="895" y="1924" />
+        <position x="877" y="1924" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -355,7 +367,7 @@
         <text>amount nack</text>
       </name>
       <graphics>
-        <position x="895" y="1846" />
+        <position x="877" y="1846" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -367,7 +379,7 @@
         <text>Fault State</text>
       </name>
       <graphics>
-        <position x="307" y="2491" />
+        <position x="294" y="2370" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -379,7 +391,7 @@
         <text>dispensing cash</text>
       </name>
       <graphics>
-        <position x="495" y="2092" />
+        <position x="477" y="2092" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -391,7 +403,7 @@
         <text>display balance</text>
       </name>
       <graphics>
-        <position x="626" y="1430" />
+        <position x="608" y="1430" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -403,7 +415,7 @@
         <text>balance confirmation</text>
       </name>
       <graphics>
-        <position x="890" y="1517" />
+        <position x="872" y="1517" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -415,7 +427,7 @@
         <text>wait for cash</text>
       </name>
       <graphics>
-        <position x="746" y="2087" />
+        <position x="728" y="2087" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -427,7 +439,7 @@
         <text>check cash</text>
       </name>
       <graphics>
-        <position x="745" y="2416" />
+        <position x="727" y="2416" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -439,7 +451,7 @@
         <text>cash deposit</text>
       </name>
       <graphics>
-        <position x="890" y="2257" />
+        <position x="872" y="2257" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -451,7 +463,7 @@
         <text>cash nack</text>
       </name>
       <graphics>
-        <position x="895" y="2490" />
+        <position x="877" y="2490" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -463,7 +475,7 @@
         <text>cash ack</text>
       </name>
       <graphics>
-        <position x="895" y="2643" />
+        <position x="877" y="2643" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -521,5 +533,7 @@
     <arc id="a49" source="tr85" target="pl2" />
     <arc id="a50" source="pl59" target="tr95" />
     <arc id="a51" source="tr95" target="pl2" />
+    <arc id="a52" source="pl59" target="tr2" />
+    <arc id="a53" source="tr2" target="pl34" />
   </net>
 </pnml>
