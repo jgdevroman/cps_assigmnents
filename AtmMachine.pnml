@@ -7,7 +7,7 @@
         <text>insert card</text>
       </name>
       <graphics>
-        <position x="627" y="120" />
+        <position x="626" y="90" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -184,10 +184,10 @@
     </transition>
     <transition id="tr40">
       <name>
-        <text>receive card info</text>
+        <text>rec_card_insert</text>
       </name>
       <graphics>
-        <position x="990" y="120" />
+        <position x="989" y="90" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -434,6 +434,24 @@
         <dimension x="32" y="32" />
       </graphics>
     </transition>
+    <transition id="tr69">
+      <name>
+        <text>rec_insert_ack</text>
+      </name>
+      <graphics>
+        <position x="625" y="203" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr70">
+      <name>
+        <text>send_insert_ack</text>
+      </name>
+      <graphics>
+        <position x="991" y="202" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
     <place id="pl2">
       <name>
         <text>idle</text>
@@ -448,10 +466,10 @@
     </place>
     <place id="pl5">
       <name>
-        <text>wait ack</text>
+        <text>wait_card_verify_ack</text>
       </name>
       <graphics>
-        <position x="627" y="226" />
+        <position x="627" y="276" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -460,10 +478,10 @@
     </place>
     <place id="pl7">
       <name>
-        <text>card verification</text>
+        <text>send_insert_card</text>
       </name>
       <graphics>
-        <position x="791" y="120" />
+        <position x="790" y="90" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -751,7 +769,7 @@
         <text>verify_card_info</text>
       </name>
       <graphics>
-        <position x="990" y="226" />
+        <position x="990" y="276" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -1094,147 +1112,189 @@
         <text>0</text>
       </initialMarking>
     </place>
+    <place id="pl10">
+      <name>
+        <text>wait_insert_ack</text>
+      </name>
+      <graphics>
+        <position x="624" y="153" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl12">
+      <name>
+        <text>send_insert_ack</text>
+      </name>
+      <graphics>
+        <position x="990" y="149" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl123">
+      <name>
+        <text>insert_ack</text>
+      </name>
+      <graphics>
+        <position x="794" y="201" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
     <arc id="a1" source="pl2" target="tr3" />
-    <arc id="a2" source="tr3" target="pl5" />
-    <arc id="a3" source="tr3" target="pl7" />
-    <arc id="a4" source="pl5" target="tr10" />
-    <arc id="a5" source="pl5" target="tr9" />
-    <arc id="a6" source="pl14" target="tr10" />
-    <arc id="a7" source="pl13" target="tr9" />
-    <arc id="a8" source="tr10" target="pl2" />
-    <arc id="a9" source="tr9" target="pl18" />
-    <arc id="a10" source="pl18" target="tr20" />
-    <arc id="a11" source="tr20" target="pl22" />
-    <arc id="a12" source="tr20" target="pl24" />
-    <arc id="a13" source="pl24" target="tr26" />
-    <arc id="a14" source="pl24" target="tr27" />
-    <arc id="a15" source="pl30" target="tr26" />
-    <arc id="a16" source="pl32" target="tr27" />
-    <arc id="a17" source="tr27" target="pl34" />
-    <arc id="a18" source="tr26" target="pl18" />
-    <arc id="a19" source="pl34" target="tr39" />
-    <arc id="a20" source="pl34" target="tr38" />
-    <arc id="a21" source="pl34" target="tr37" />
-    <arc id="a22" source="pl34" target="tr43" />
-    <arc id="a23" source="pl46" target="tr48" />
-    <arc id="a24" source="tr48" target="pl50" />
-    <arc id="a25" source="tr48" target="pl52" />
-    <arc id="a26" source="pl55" target="tr56" />
-    <arc id="a27" source="tr56" target="pl59" />
-    <arc id="a28" source="pl52" target="tr56" />
-    <arc id="a29" source="pl52" target="tr62" />
-    <arc id="a30" source="pl54" target="tr62" />
-    <arc id="a31" source="tr62" target="pl65" />
-    <arc id="a32" source="pl65" target="tr67" />
-    <arc id="a33" source="tr67" target="pl2" />
-    <arc id="a34" source="tr72" target="pl73" />
-    <arc id="a35" source="pl70" target="tr72" />
-    <arc id="a36" source="tr72" target="pl34" />
-    <arc id="a37" source="pl77" target="tr79" />
-    <arc id="a38" source="tr79" target="pl82" />
-    <arc id="a39" source="tr79" target="pl81" />
-    <arc id="a40" source="pl81" target="tr86" />
-    <arc id="a41" source="tr86" target="pl59" />
-    <arc id="a42" source="pl89" target="tr86" />
-    <arc id="a43" source="pl91" target="tr85" />
-    <arc id="a44" source="pl81" target="tr85" />
-    <arc id="a45" source="tr85" target="pl2" />
-    <arc id="a46" source="pl59" target="tr95" />
-    <arc id="a47" source="tr95" target="pl2" />
-    <arc id="a48" source="pl59" target="tr2" />
-    <arc id="a49" source="tr2" target="pl34" />
-    <arc id="a50" source="pl1" target="tr40" />
-    <arc id="a51" source="tr40" target="pl3" />
-    <arc id="a52" source="pl3" target="tr41" />
-    <arc id="a53" source="pl3" target="tr42" />
-    <arc id="a54" source="tr41" target="pl1" />
-    <arc id="a55" source="tr42" target="pl9" />
-    <arc id="a56" source="pl9" target="tr44" />
-    <arc id="a57" source="tr44" target="pl11" />
-    <arc id="a58" source="pl11" target="tr45" />
-    <arc id="a59" source="pl11" target="tr46" />
-    <arc id="a60" source="tr46" target="pl16" />
-    <arc id="a61" source="tr45" target="pl9" />
-    <arc id="a62" source="pl16" target="tr47" />
-    <arc id="a63" source="pl16" target="tr49" />
-    <arc id="a64" source="pl16" target="tr50" />
-    <arc id="a65" source="pl16" target="tr51" />
-    <arc id="a66" source="pl17" target="tr52" />
-    <arc id="a67" source="tr52" target="pl20" />
-    <arc id="a68" source="tr53" target="pl23" />
-    <arc id="a69" source="pl20" target="tr53" />
-    <arc id="a70" source="pl20" target="tr54" />
-    <arc id="a71" source="tr54" target="pl26" />
-    <arc id="a72" source="pl26" target="tr55" />
-    <arc id="a73" source="tr55" target="pl1" />
-    <arc id="a74" source="pl27" target="tr57" />
-    <arc id="a75" source="tr57" target="pl16" />
-    <arc id="a76" source="pl29" target="tr58" />
-    <arc id="a77" source="tr58" target="pl33" />
-    <arc id="a78" source="pl33" target="tr59" />
-    <arc id="a79" source="tr59" target="pl23" />
-    <arc id="a80" source="pl33" target="tr60" />
-    <arc id="a81" source="tr60" target="pl1" />
-    <arc id="a82" source="pl23" target="tr61" />
-    <arc id="a83" source="tr61" target="pl1" />
-    <arc id="a84" source="pl23" target="tr63" />
-    <arc id="a85" source="tr63" target="pl16" />
-    <arc id="a86" source="pl7" target="tr40" />
-    <arc id="a87" source="tr41" target="pl14" />
-    <arc id="a88" source="tr42" target="pl13" />
-    <arc id="a89" source="pl22" target="tr44" />
-    <arc id="a90" source="tr45" target="pl30" />
-    <arc id="a91" source="tr46" target="pl32" />
-    <arc id="a92" source="pl73" target="tr57" />
-    <arc id="a93" source="pl50" target="tr52" />
-    <arc id="a94" source="tr53" target="pl55" />
-    <arc id="a95" source="tr54" target="pl54" />
-    <arc id="a96" source="pl82" target="tr58" />
-    <arc id="a97" source="tr59" target="pl89" />
-    <arc id="a98" source="tr60" target="pl91" />
-    <arc id="a99" source="tr37" target="pl31" />
-    <arc id="a100" source="pl31" target="tr50" />
-    <arc id="a101" source="tr38" target="pl35" />
-    <arc id="a102" source="pl35" target="tr49" />
-    <arc id="a103" source="tr39" target="pl39" />
-    <arc id="a104" source="pl39" target="tr47" />
-    <arc id="a105" source="tr38" target="pl47" />
-    <arc id="a106" source="tr49" target="pl48" />
-    <arc id="a107" source="pl47" target="tr65" />
-    <arc id="a108" source="tr65" target="pl70" />
-    <arc id="a109" source="pl49" target="tr65" />
-    <arc id="a110" source="tr64" target="pl49" />
-    <arc id="a111" source="pl48" target="tr64" />
-    <arc id="a112" source="tr64" target="pl27" />
-    <arc id="a113" source="tr43" target="pl4" />
-    <arc id="a114" source="pl4" target="tr51" />
-    <arc id="a115" source="tr43" target="pl51" />
-    <arc id="a116" source="tr51" target="pl56" />
-    <arc id="a117" source="pl51" target="tr111" />
-    <arc id="a118" source="tr111" target="pl2" />
-    <arc id="a119" source="pl56" target="tr119" />
-    <arc id="a120" source="tr119" target="pl1" />
-    <arc id="a121" source="tr119" target="pl58" />
-    <arc id="a122" source="pl58" target="tr111" />
-    <arc id="a123" source="tr39" target="pl8" />
-    <arc id="a124" source="tr47" target="pl6" />
-    <arc id="a125" source="pl8" target="tr66" />
-    <arc id="a126" source="pl69" target="tr66" />
-    <arc id="a127" source="tr66" target="pl46" />
-    <arc id="a128" source="pl6" target="tr68" />
-    <arc id="a129" source="tr68" target="pl69" />
-    <arc id="a130" source="tr68" target="pl17" />
-    <arc id="a131" source="tr37" target="pl120" />
-    <arc id="a132" source="pl120" target="tr122" />
-    <arc id="a133" source="pl124" target="tr122" />
-    <arc id="a134" source="tr122" target="pl77" />
-    <arc id="a135" source="tr50" target="pl121" />
-    <arc id="a136" source="pl121" target="tr123" />
-    <arc id="a137" source="tr123" target="pl124" />
-    <arc id="a138" source="tr123" target="pl29" />
-    <arc id="a139" source="tr2" target="pl145" />
-    <arc id="a140" source="pl145" target="tr63" />
-    <arc id="a141" source="tr95" target="pl148" />
-    <arc id="a142" source="pl148" target="tr61" />
+    <arc id="a2" source="tr3" target="pl7" />
+    <arc id="a3" source="pl5" target="tr10" />
+    <arc id="a4" source="pl5" target="tr9" />
+    <arc id="a5" source="pl14" target="tr10" />
+    <arc id="a6" source="pl13" target="tr9" />
+    <arc id="a7" source="tr10" target="pl2" />
+    <arc id="a8" source="tr9" target="pl18" />
+    <arc id="a9" source="pl18" target="tr20" />
+    <arc id="a10" source="tr20" target="pl22" />
+    <arc id="a11" source="tr20" target="pl24" />
+    <arc id="a12" source="pl24" target="tr26" />
+    <arc id="a13" source="pl24" target="tr27" />
+    <arc id="a14" source="pl30" target="tr26" />
+    <arc id="a15" source="pl32" target="tr27" />
+    <arc id="a16" source="tr27" target="pl34" />
+    <arc id="a17" source="tr26" target="pl18" />
+    <arc id="a18" source="pl34" target="tr39" />
+    <arc id="a19" source="pl34" target="tr38" />
+    <arc id="a20" source="pl34" target="tr37" />
+    <arc id="a21" source="pl34" target="tr43" />
+    <arc id="a22" source="pl46" target="tr48" />
+    <arc id="a23" source="tr48" target="pl50" />
+    <arc id="a24" source="tr48" target="pl52" />
+    <arc id="a25" source="pl55" target="tr56" />
+    <arc id="a26" source="tr56" target="pl59" />
+    <arc id="a27" source="pl52" target="tr56" />
+    <arc id="a28" source="pl52" target="tr62" />
+    <arc id="a29" source="pl54" target="tr62" />
+    <arc id="a30" source="tr62" target="pl65" />
+    <arc id="a31" source="pl65" target="tr67" />
+    <arc id="a32" source="tr67" target="pl2" />
+    <arc id="a33" source="tr72" target="pl73" />
+    <arc id="a34" source="pl70" target="tr72" />
+    <arc id="a35" source="tr72" target="pl34" />
+    <arc id="a36" source="pl77" target="tr79" />
+    <arc id="a37" source="tr79" target="pl82" />
+    <arc id="a38" source="tr79" target="pl81" />
+    <arc id="a39" source="pl81" target="tr86" />
+    <arc id="a40" source="tr86" target="pl59" />
+    <arc id="a41" source="pl89" target="tr86" />
+    <arc id="a42" source="pl91" target="tr85" />
+    <arc id="a43" source="pl81" target="tr85" />
+    <arc id="a44" source="tr85" target="pl2" />
+    <arc id="a45" source="pl59" target="tr95" />
+    <arc id="a46" source="tr95" target="pl2" />
+    <arc id="a47" source="pl59" target="tr2" />
+    <arc id="a48" source="tr2" target="pl34" />
+    <arc id="a49" source="pl1" target="tr40" />
+    <arc id="a50" source="pl3" target="tr41" />
+    <arc id="a51" source="pl3" target="tr42" />
+    <arc id="a52" source="tr41" target="pl1" />
+    <arc id="a53" source="tr42" target="pl9" />
+    <arc id="a54" source="pl9" target="tr44" />
+    <arc id="a55" source="tr44" target="pl11" />
+    <arc id="a56" source="pl11" target="tr45" />
+    <arc id="a57" source="pl11" target="tr46" />
+    <arc id="a58" source="tr46" target="pl16" />
+    <arc id="a59" source="tr45" target="pl9" />
+    <arc id="a60" source="pl16" target="tr47" />
+    <arc id="a61" source="pl16" target="tr49" />
+    <arc id="a62" source="pl16" target="tr50" />
+    <arc id="a63" source="pl16" target="tr51" />
+    <arc id="a64" source="pl17" target="tr52" />
+    <arc id="a65" source="tr52" target="pl20" />
+    <arc id="a66" source="tr53" target="pl23" />
+    <arc id="a67" source="pl20" target="tr53" />
+    <arc id="a68" source="pl20" target="tr54" />
+    <arc id="a69" source="tr54" target="pl26" />
+    <arc id="a70" source="pl26" target="tr55" />
+    <arc id="a71" source="tr55" target="pl1" />
+    <arc id="a72" source="pl27" target="tr57" />
+    <arc id="a73" source="tr57" target="pl16" />
+    <arc id="a74" source="pl29" target="tr58" />
+    <arc id="a75" source="tr58" target="pl33" />
+    <arc id="a76" source="pl33" target="tr59" />
+    <arc id="a77" source="tr59" target="pl23" />
+    <arc id="a78" source="pl33" target="tr60" />
+    <arc id="a79" source="tr60" target="pl1" />
+    <arc id="a80" source="pl23" target="tr61" />
+    <arc id="a81" source="tr61" target="pl1" />
+    <arc id="a82" source="pl23" target="tr63" />
+    <arc id="a83" source="tr63" target="pl16" />
+    <arc id="a84" source="pl7" target="tr40" />
+    <arc id="a85" source="tr41" target="pl14" />
+    <arc id="a86" source="tr42" target="pl13" />
+    <arc id="a87" source="pl22" target="tr44" />
+    <arc id="a88" source="tr45" target="pl30" />
+    <arc id="a89" source="tr46" target="pl32" />
+    <arc id="a90" source="pl73" target="tr57" />
+    <arc id="a91" source="pl50" target="tr52" />
+    <arc id="a92" source="tr53" target="pl55" />
+    <arc id="a93" source="tr54" target="pl54" />
+    <arc id="a94" source="pl82" target="tr58" />
+    <arc id="a95" source="tr59" target="pl89" />
+    <arc id="a96" source="tr60" target="pl91" />
+    <arc id="a97" source="tr37" target="pl31" />
+    <arc id="a98" source="pl31" target="tr50" />
+    <arc id="a99" source="tr38" target="pl35" />
+    <arc id="a100" source="pl35" target="tr49" />
+    <arc id="a101" source="tr39" target="pl39" />
+    <arc id="a102" source="pl39" target="tr47" />
+    <arc id="a103" source="tr38" target="pl47" />
+    <arc id="a104" source="tr49" target="pl48" />
+    <arc id="a105" source="pl47" target="tr65" />
+    <arc id="a106" source="tr65" target="pl70" />
+    <arc id="a107" source="pl49" target="tr65" />
+    <arc id="a108" source="tr64" target="pl49" />
+    <arc id="a109" source="pl48" target="tr64" />
+    <arc id="a110" source="tr64" target="pl27" />
+    <arc id="a111" source="tr43" target="pl4" />
+    <arc id="a112" source="pl4" target="tr51" />
+    <arc id="a113" source="tr43" target="pl51" />
+    <arc id="a114" source="tr51" target="pl56" />
+    <arc id="a115" source="pl51" target="tr111" />
+    <arc id="a116" source="tr111" target="pl2" />
+    <arc id="a117" source="pl56" target="tr119" />
+    <arc id="a118" source="tr119" target="pl1" />
+    <arc id="a119" source="tr119" target="pl58" />
+    <arc id="a120" source="pl58" target="tr111" />
+    <arc id="a121" source="tr39" target="pl8" />
+    <arc id="a122" source="tr47" target="pl6" />
+    <arc id="a123" source="pl8" target="tr66" />
+    <arc id="a124" source="pl69" target="tr66" />
+    <arc id="a125" source="tr66" target="pl46" />
+    <arc id="a126" source="pl6" target="tr68" />
+    <arc id="a127" source="tr68" target="pl69" />
+    <arc id="a128" source="tr68" target="pl17" />
+    <arc id="a129" source="tr37" target="pl120" />
+    <arc id="a130" source="pl120" target="tr122" />
+    <arc id="a131" source="pl124" target="tr122" />
+    <arc id="a132" source="tr122" target="pl77" />
+    <arc id="a133" source="tr50" target="pl121" />
+    <arc id="a134" source="pl121" target="tr123" />
+    <arc id="a135" source="tr123" target="pl124" />
+    <arc id="a136" source="tr123" target="pl29" />
+    <arc id="a137" source="tr2" target="pl145" />
+    <arc id="a138" source="pl145" target="tr63" />
+    <arc id="a139" source="tr95" target="pl148" />
+    <arc id="a140" source="pl148" target="tr61" />
+    <arc id="a141" source="tr3" target="pl10" />
+    <arc id="a142" source="tr40" target="pl12" />
+    <arc id="a143" source="pl10" target="tr69" />
+    <arc id="a144" source="pl12" target="tr70" />
+    <arc id="a145" source="tr70" target="pl123" />
+    <arc id="a146" source="pl123" target="tr69" />
+    <arc id="a147" source="tr69" target="pl5" />
+    <arc id="a148" source="tr70" target="pl3" />
   </net>
 </pnml>
