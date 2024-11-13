@@ -25,13 +25,13 @@
         <text>nack</text>
       </name>
       <graphics>
-        <position x="363" y="344" />
+        <position x="366" y="315" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
     <transition id="tr20">
       <name>
-        <text>enter pin</text>
+        <text>enter_pin</text>
       </name>
       <graphics>
         <position x="626" y="728" />
@@ -196,7 +196,7 @@
         <text>card_invalid</text>
       </name>
       <graphics>
-        <position x="1254" y="344" />
+        <position x="1250" y="312" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -505,7 +505,7 @@
         <text>card nack</text>
       </name>
       <graphics>
-        <position x="795" y="343" />
+        <position x="795" y="360" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -526,7 +526,7 @@
     </place>
     <place id="pl22">
       <name>
-        <text>pin verification</text>
+        <text>send_pin</text>
       </name>
       <graphics>
         <position x="790" y="728" />
@@ -1148,6 +1148,18 @@
         <text>0</text>
       </initialMarking>
     </place>
+    <place id="pl153">
+      <name>
+        <text>send_return</text>
+      </name>
+      <graphics>
+        <position x="795" y="313" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
     <arc id="a1" source="pl2" target="tr3" />
     <arc id="a2" source="tr3" target="pl7" />
     <arc id="a3" source="pl5" target="tr10" />
@@ -1296,5 +1308,7 @@
     <arc id="a146" source="pl123" target="tr69" />
     <arc id="a147" source="tr69" target="pl5" />
     <arc id="a148" source="tr70" target="pl3" />
+    <arc id="a149" source="tr10" target="pl153" />
+    <arc id="a150" source="pl153" target="tr41" />
   </net>
 </pnml>
