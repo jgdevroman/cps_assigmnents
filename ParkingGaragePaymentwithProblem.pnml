@@ -7,7 +7,7 @@
         <text>insertTicket</text>
       </name>
       <graphics>
-        <position x="148" y="264" />
+        <position x="246" y="264" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -16,7 +16,7 @@
         <text>Exception</text>
       </name>
       <graphics>
-        <position x="313" y="330" />
+        <position x="415" y="330" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -25,7 +25,7 @@
         <text>ResetMachine</text>
       </name>
       <graphics>
-        <position x="313" y="787" />
+        <position x="411" y="787" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -34,7 +34,7 @@
         <text>checkSaldo</text>
       </name>
       <graphics>
-        <position x="148" y="721" />
+        <position x="246" y="721" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -43,7 +43,7 @@
         <text>Ack</text>
       </name>
       <graphics>
-        <position x="16" y="99" />
+        <position x="114" y="99" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -52,7 +52,7 @@
         <text>insertTicket</text>
       </name>
       <graphics>
-        <position x="874" y="264" />
+        <position x="972" y="264" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -61,7 +61,7 @@
         <text>Exception</text>
       </name>
       <graphics>
-        <position x="709" y="330" />
+        <position x="807" y="330" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -70,7 +70,7 @@
         <text>ResetMachine</text>
       </name>
       <graphics>
-        <position x="709" y="787" />
+        <position x="807" y="787" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -79,7 +79,7 @@
         <text>checkSaldo</text>
       </name>
       <graphics>
-        <position x="874" y="721" />
+        <position x="972" y="721" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -88,7 +88,7 @@
         <text>Ack</text>
       </name>
       <graphics>
-        <position x="1006" y="99" />
+        <position x="1104" y="99" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -97,7 +97,7 @@
         <text>paymentPrompt</text>
       </name>
       <graphics>
-        <position x="148" y="425" />
+        <position x="246" y="425" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -106,7 +106,7 @@
         <text>PaymentPrompt</text>
       </name>
       <graphics>
-        <position x="875" y="428" />
+        <position x="973" y="428" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -115,7 +115,7 @@
         <text>InsertCoin</text>
       </name>
       <graphics>
-        <position x="874" y="561" />
+        <position x="972" y="561" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -124,7 +124,7 @@
         <text>InsertCoin</text>
       </name>
       <graphics>
-        <position x="148" y="563" />
+        <position x="246" y="563" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -133,13 +133,34 @@
         <text>ticket_exception</text>
       </name>
       <graphics>
-        <position x="1141" y="190" />
+        <position x="1250" y="130" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
     <transition id="tr6">
+      <name>
+        <text>return_ticket</text>
+      </name>
       <graphics>
-        <position x="1143" y="344" />
+        <position x="1251" y="316" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr7">
+      <name>
+        <text>rec_ack_card_error</text>
+      </name>
+      <graphics>
+        <position x="16" y="138" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr26">
+      <name>
+        <text>send_ack_retrun_ticket</text>
+      </name>
+      <graphics>
+        <position x="18" y="310" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -148,7 +169,7 @@
         <text>Idle</text>
       </name>
       <graphics>
-        <position x="247" y="165" />
+        <position x="345" y="165" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -160,7 +181,7 @@
         <text>TicketProcessing</text>
       </name>
       <graphics>
-        <position x="148" y="330" />
+        <position x="246" y="330" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -172,7 +193,7 @@
         <text>Fault</text>
       </name>
       <graphics>
-        <position x="313" y="396" />
+        <position x="413" y="410" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -184,7 +205,7 @@
         <text>iTicket</text>
       </name>
       <graphics>
-        <position x="511" y="264" />
+        <position x="609" y="264" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -196,7 +217,7 @@
         <text>iError</text>
       </name>
       <graphics>
-        <position x="511" y="330" />
+        <position x="609" y="330" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -208,7 +229,7 @@
         <text>iReset</text>
       </name>
       <graphics>
-        <position x="511" y="787" />
+        <position x="609" y="787" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -220,7 +241,7 @@
         <text>iOutcome</text>
       </name>
       <graphics>
-        <position x="511" y="721" />
+        <position x="609" y="721" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -232,7 +253,7 @@
         <text>checkingSaldo</text>
       </name>
       <graphics>
-        <position x="16" y="721" />
+        <position x="114" y="721" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -244,7 +265,7 @@
         <text>iAck</text>
       </name>
       <graphics>
-        <position x="511" y="99" />
+        <position x="609" y="99" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -256,7 +277,7 @@
         <text>Idle</text>
       </name>
       <graphics>
-        <position x="775" y="165" />
+        <position x="873" y="165" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -268,7 +289,7 @@
         <text>TicketProcessing</text>
       </name>
       <graphics>
-        <position x="874" y="330" />
+        <position x="972" y="330" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -280,7 +301,7 @@
         <text>Fault</text>
       </name>
       <graphics>
-        <position x="709" y="396" />
+        <position x="807" y="408" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -292,7 +313,7 @@
         <text>checkingSaldo</text>
       </name>
       <graphics>
-        <position x="1006" y="721" />
+        <position x="1104" y="721" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -304,7 +325,7 @@
         <text>CheckingCoin</text>
       </name>
       <graphics>
-        <position x="148" y="653" />
+        <position x="246" y="653" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -316,7 +337,7 @@
         <text>CheckingCoin</text>
       </name>
       <graphics>
-        <position x="873" y="664" />
+        <position x="971" y="664" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -328,7 +349,7 @@
         <text>iPayment</text>
       </name>
       <graphics>
-        <position x="511" y="426" />
+        <position x="609" y="426" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -340,7 +361,7 @@
         <text>PaymentProcessing</text>
       </name>
       <graphics>
-        <position x="147" y="500" />
+        <position x="245" y="500" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -352,7 +373,7 @@
         <text>PaymentProcessing</text>
       </name>
       <graphics>
-        <position x="875" y="497" />
+        <position x="973" y="497" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -364,7 +385,7 @@
         <text>iCoin</text>
       </name>
       <graphics>
-        <position x="509" y="562" />
+        <position x="607" y="562" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -373,10 +394,46 @@
     </place>
     <place id="pl15">
       <name>
+        <text>wait_ack_return_ticket</text>
+      </name>
+      <graphics>
+        <position x="1248" y="248" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl20">
+      <name>
+        <text>req_return_ticket</text>
+      </name>
+      <graphics>
+        <position x="609" y="199" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl27">
+      <name>
         <text>return_ticket</text>
       </name>
       <graphics>
-        <position x="1141" y="279" />
+        <position x="17" y="215" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl30">
+      <name>
+        <text>ack_return_ticket</text>
+      </name>
+      <graphics>
+        <position x="609" y="377" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -385,7 +442,7 @@
     </place>
     <page id="ip1">
       <graphics>
-        <position x="511" y="444" />
+        <position x="609" y="444" />
         <dimension x="66" y="750" />
       </graphics>
       <toolspecific tool="Yasper" version="2.0.3909.18320">
@@ -400,7 +457,7 @@
           <text>SERVER</text>
         </description>
         <graphics>
-          <position x="270" y="12" />
+          <position x="368" y="12" />
           <dimension x="88" y="24" />
         </graphics>
       </comment>
@@ -411,7 +468,7 @@
           <text>CLIENT</text>
         </description>
         <graphics>
-          <position x="792" y="14" />
+          <position x="890" y="14" />
           <dimension x="80" y="24" />
         </graphics>
       </comment>
@@ -425,8 +482,8 @@
     <arc id="a22" source="pl4" target="tr13" />
     <arc id="a23" source="tr13" target="pl2">
       <graphics>
-        <position x="412" y="688" />
-        <position x="411" y="232" />
+        <position x="510" y="688" />
+        <position x="509" y="232" />
       </graphics>
     </arc>
     <arc id="a24" source="pl7" target="tr13" />
@@ -435,7 +492,7 @@
     <arc id="a28" source="pl9" target="tr15" />
     <arc id="a29" source="tr15" target="pl2">
       <graphics>
-        <position x="82" y="165" />
+        <position x="180" y="165" />
       </graphics>
     </arc>
     <arc id="a30" source="pl10" target="tr15" />
@@ -446,15 +503,15 @@
     <arc id="a49" source="pl12" target="tr21" />
     <arc id="a50" source="tr21" target="pl1">
       <graphics>
-        <position x="610" y="688" />
-        <position x="608" y="218" />
+        <position x="708" y="688" />
+        <position x="706" y="218" />
       </graphics>
     </arc>
     <arc id="a51" source="tr22" target="pl17" />
     <arc id="a53" source="pl17" target="tr23" />
     <arc id="a54" source="tr23" target="pl1">
       <graphics>
-        <position x="940" y="165" />
+        <position x="1038" y="165" />
       </graphics>
     </arc>
     <arc id="a55" source="tr23" target="pl10" />
@@ -477,9 +534,40 @@
     <arc id="a75" source="tr3" target="pl23" />
     <arc id="a76" source="pl23" target="tr4" />
     <arc id="a85" source="pl11" target="tr5" />
-    <arc id="a86" source="pl6" target="tr5" />
+    <arc id="a86" source="pl6" target="tr5">
+      <graphics>
+        <position x="715" y="133" />
+      </graphics>
+    </arc>
     <arc id="a87" source="tr5" target="pl15" />
     <arc id="a88" source="pl15" target="tr6" />
     <arc id="a89" source="tr6" target="pl12" />
+    <arc id="a90" source="pl5" target="tr7">
+      <graphics>
+        <position x="483" y="135" />
+      </graphics>
+    </arc>
+    <arc id="a91" source="tr5" target="pl20">
+      <graphics>
+        <position x="1047" y="201" />
+      </graphics>
+    </arc>
+    <arc id="a92" source="pl20" target="tr7">
+      <graphics>
+        <position x="220" y="198" />
+      </graphics>
+    </arc>
+    <arc id="a93" source="tr7" target="pl27" />
+    <arc id="a94" source="pl27" target="tr26" />
+    <arc id="a95" source="tr26" target="pl30">
+      <graphics>
+        <position x="301" y="374" />
+      </graphics>
+    </arc>
+    <arc id="a96" source="pl30" target="tr6">
+      <graphics>
+        <position x="848" y="378" />
+      </graphics>
+    </arc>
   </net>
 </pnml>
