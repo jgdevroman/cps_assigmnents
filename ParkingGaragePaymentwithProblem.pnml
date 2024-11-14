@@ -148,7 +148,7 @@
     </transition>
     <transition id="tr7">
       <name>
-        <text>rec_ack_card_error</text>
+        <text>rec_req_return_ticket</text>
       </name>
       <graphics>
         <position x="16" y="138" />
@@ -418,7 +418,7 @@
     </place>
     <place id="pl27">
       <name>
-        <text>return_ticket</text>
+        <text>process_return_ticket</text>
       </name>
       <graphics>
         <position x="17" y="215" />
